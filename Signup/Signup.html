@@ -34,13 +34,19 @@
                 <input type="date" id="dob" name="dob" required>
                 <br>
             </form><br>
-            <button type="submit" class="btn">Register</button><a href="UI.html"></a>
-
+            <button type="submit" class="btn" onclick="registerUser()">Register</button>
             <div class="register-link">
                 <p>Have an account? <a href="Sign-in.html">Login </a> </p>
             </div>
 
         </form> 
+        
+        <script>
+            function registerUser() {
+              event.preventDefault();
+              window.location.href = "Confirmation.html";
+            }
+          </script>
 
     </div>
 </body>
