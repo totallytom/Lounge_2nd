@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmed! Welcome~</title>
     <link rel="stylesheet" href="confirmation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class= "body">
-        
+    <div class= "wrapper">
+        <h1>Registration Successful!</h1>
+        <br>
+        <p>Thank you for registering with us. Your account has been created successfully.</p>
+        <br>
+        <p>Get started now!</p>
+        <div class="menu-link">
+            <button type="submit" class="btn" onclick="registerUser()">Login</button>
+        </div> 
+        <script>
+            function registerUser() {
+              event.preventDefault();
+              window.location.href = "/Sign-in/Sign-in.html";
+            }
+          </script>
     </div>
-    <h1>Registration Successful!</h1>
-    <p>Thank you for registering with us. Your account has been created successfully.</p>
-    <p>Get started now!</p>
-    <button><a href="\Sign-in\Sign-in.html">Login to Your Account</a></button>
 </body>
 </html>
