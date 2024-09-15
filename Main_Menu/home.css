@@ -1,0 +1,92 @@
+.news-flex-box {
+    flex: 0 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  
+  .news-box {
+    flex: 1;
+  }
+  
+  .update-box {
+    flex: 1;
+  }
+  
+  .miniroom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box-title {
+    font-family: "KOTRA_BOLD-Bold";
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #000000;
+  }
+  
+  .news-row {
+    display: flex;
+    font-size: 0.85rem;
+    margin: 3px 0;
+  }
+  
+  .news-category {
+    padding: 0 6px;
+    margin-right: 6px;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .category-pic {
+    background-color: #f15f5f;
+  }
+  
+  .category-post {
+    background-color: #355fc9;
+  }
+  
+  .menu-row {
+    display: flex;
+    border-bottom: 1px dashed grey;
+    margin: 3px 0;
+  }
+  
+  .menu-item {
+    flex: 1;
+  }
+  
+  .menu-num {
+    font-family: "NeoDunggeunmo";
+    padding-left: 6px;
+    color: #113c94;
+  }
+  
+  .miniroom-gif-box {
+    border: 1px solid #ffe1e1;
+    flex: 1;
+    display: flex;
+    border: solid 7px #beabab; 
+    
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
