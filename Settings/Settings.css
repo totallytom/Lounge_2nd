@@ -1,116 +1,134 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+  font-family: "NeoDunggeunmo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
-  min-height: 100vh; 
-  background-image: url("lida-cosgrove-lcosgrove-campfire-final-full.gif");
-  background-size: cover; 
-  background-position: center; 
+@font-face {
+  font-family: "KOTRA_BOLD-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.wrapper {
-  width: 420px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, .2); 
-  backdrop-filter: blur(20px); 
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-  color: #fff; 
-  border-radius: 10px; 
-  padding: 30px 40px; 
+@font-face {
+  font-family: "KyoboHand";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.wrapper h1{
-  font-size: 36px; 
-  text-align: center; 
+.font-kotra {
+  font-family: "KOTRA_BOLD-Bold";
 }
 
-.wrapper .input-box {
+.font-kyobohand {
+  font-family: "KyoboHand";
+}
+
+.font-neo {
+  font-family: "NeoDunggeunmo";
+}
+
+body, html{
+    background-color:aliceblue;
+    color:black;
+    user-select: none; 
     width: 100%;
-    height: 50px; 
-    margin: 30px 0; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.input-box input {
-    width: 100%;
-    height: 100%; 
-    background: transparent; 
-    border: none; 
-    outline: none; 
-    border: 2px solid rgba(255, 255, 255, .2); 
-    border-radius: 40px; 
-    font-size: 16px; 
-    color: #fff;
-    padding: 20px 45px 20px 20px; 
+.container{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(200,200,200);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
 }
 
-.input-box input::placeholder {
-    color: #fff;
-}
-
-.input-box i {
-    position: absolute; 
-    right: 20px; 
-    top: 50%; 
-    transform: translateY(-50%);
-    font-size: 20px; 
-}
-
-.wrapper .remember-forgot { 
-    display: flex; 
-    justify-content: space-between; 
-    font-size: 14.5px; 
-    margin: -15px 0 15px; 
-}
-
-.remember-forgot label input{ 
-    accent-color: #fff; 
-    margin-right: 3px; 
-}
-
-.remember-forgot a{
-    color: #fff; 
-    text-decoration: none; 
-}
-
-.rememeber-forgot a:hover{
-    text-decoration: underline;
-}
-
-.wrapper .btn {
-    width: 100%;
-    height: 45px; 
-    background: #fff;
-    border: none; 
-    outline: none; 
-    border-radius: 40px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1); 
-    cursor: pointer; 
-    font-size: 16px; 
-    color: #333;
-    font-weight: 600; 
-}
-
-.wrapper .register-link { 
-    font-size: 14.5px;
-    text-align: center; 
-    margin: 20px 0 15px;  
-}
-
-.register-link p a {
-    color: #fff;
-    text-decoration: none; 
+h1, h3{
     font-weight: 600;
 }
 
-.register-link p a:hover {
-    text-decoration: underline; 
+span{
+    font-weight: 500;
+}
+
+.toggle-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle{
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: rgb(228, 219, 219);
+    display: inline-block;
+
+}
+
+.toggle-c{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 300ms all;
+    border: 1px solid #BCBCA4;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + div .toggle-c{
+    left: 30px;
+    background-color: #30305C;
+    border-color: #30305C;
+}
+
+input[type="radio"]{
+    border: 0px;
+    width: 10%;
+    height: 20px;
+    accent-color: black;
+}
+
+.togg-label{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    gap: 5px;
+}
+
+.bottom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bottom:hover{
+    text-decoration:L 
 }

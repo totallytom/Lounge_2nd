@@ -5,23 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link rel="stylesheet" href="Settings.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <div class="wrapper">
-        <h1>Settings</h1>
-        <div class = "input-box">
-            <li>
-                <button type = "submit" class="btn" href="Accountsettings.html">Account Settings</button>
-            </li>
+    <body>
+        <div class="container">
+            <div class="font-kotra">
+                <h1>Settings</h1>
+            </div>
+            <div>
+                <div>
+                    <div class="togg-label1" class="font-kyobohand" for="togg-1">
+                        <span>Dark Mode</span>
+                        <input type="checkbox" id="togg-1">
+                        <div class="toggle-container">
+                            <span class="toggle"></span>
+                            <span class="toggle-c"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="togg-label2" class="font-kyobohand" for="togg-2">
+                        <span>Desktop notification</span>
+                        <input type="checkbox" id="togg-2">
+                        <div class="toggle-container">
+                            <span class="toggle"></span>
+                            <span class="toggle-c"></span>
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <div class="togg-label3" class="font-kyobohand" for="togg-3">
+                        <span>Private Account</span>
+                        <input type="checkbox" id="togg-3">
+                        <div class="toggle-container">
+                            <span class="toggle"></span>
+                            <span class="toggle-c"></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="font-kotra">
+                <h3>Conservation view</h3>
+            </div>
+
+            <div class="font-kyobohand">
+                <label for="radio1" class="flex">
+                    <input type="radio" name="Filter" id="radio1">
+                    <span>Newest on Top</span>
+                </label>
+            </div>
+            <div class="font-kyobohand">
+                <label for="radio2" class="flex">
+                    <input type="radio" name="Filter" id="radio2">
+                    <span>Newest on Bottom</span>
+                </label>
+            </div>
+            <div class="font-kyobohand">
+                <label for="radio3" class="flex">
+                    <input type="radio" name="Filter" id="radio3">
+                    <span>Off</span>
+                </label>
+            </div>
         </div>
-        <div class = "input-box"></div>
-            <li>Change background</li>
+        <div>
+            <div class="font-kotra">
+                <h3>Reading Pannel</h3>
+            </div>
+
+            <div class="font-kyobohand">
+                <label for="radio4" class="flex">
+                    <input type="radio" name="Show-Mode" id="radio4">
+                    <span>Show on the Right</span>
+                </label>
+            </div>
+            <div class="font-kyobohand">
+                <label for="radio5" class="flex">
+                    <input type="radio" name="Show-Mode" id="radio5">
+                    <span>Show on the Left</span>
+                </label>
+            </div>
+            <div class="font-kyobohand">
+                <label for="radio6" class="flex">
+                    <input type="radio" name="Show-Mode" id="radio6">
+                    <span>Off</span>
+                </label>
+            </div>
+            <div class="bottom">
+                <span>View all the settings...</span>
+            </div>
         </div>
-        <div class = "input-box"></div>
-            <li>Security</li>
-        </div>
-        <div class = "input-box"></div>
-            <li>Report a problem</li>
-        </div>
-    </div>
+    </body>    
 </html>
