@@ -27,11 +27,17 @@
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="btn" a href="/Home/Home.html">Login</button>
-
+            <button type="submit" class="btn" onclick="registerUser()">Login</button>
             <div class="register-link">
                 <p>Don't have an account? <a href="/Signup/Signup.html">Register</a> </p>
             </div>
+
+            <script>
+                function registerUser() {
+                  event.preventDefault();
+                  window.location.pathname = "/Home/Home.html";
+                }
+              </script>
 
         </form> 
 
