@@ -242,6 +242,8 @@ a button:hover {
   align-items: center;
   justify-content: center;
   font-family: "KOTRA_BOLD-Bold";
+  top: 10px; 
+  position: relative;
 }
 
 #day-number{
