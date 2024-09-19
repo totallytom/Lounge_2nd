@@ -30,7 +30,7 @@ body {
 
 .bookcover {
 
-  background-color: transparent;
+  background-color: w;
 
   border-radius: 9px;
 
@@ -39,7 +39,7 @@ body {
   width: 960px;
   height: 660px;
 
-  margin: 100px auto;
+  margin: 40px auto;
 
   position: relative;
 }
@@ -184,7 +184,7 @@ body {
 
 a button:hover {
   background-color: #6B66FF;
-  color: white;
+  color: rgb(219, 198, 198);
 }
 
 .profile-dropdown{

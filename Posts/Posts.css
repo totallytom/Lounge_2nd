@@ -10,3 +10,52 @@ body {
     right: 0;
     bottom: 0;
   }
+
+.container{
+flex: 1;
+display: inline-flex;
+flex-direction: column;
+}
+
+.menupage {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: rgb(170, 157, 157);
+  border-style: solid;
+  border-width: 2px;
+  position: fixed;
+  top: 85px;
+  left: 20px;
+  right: 400px;
+  display: flex;
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  
+}
+
+.btn-primary{
+  align-items: right;
+  width: 10%;
+  height: 45px;
+  background: #4f7de2;
+  border: black;
+  outline: black;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.mainpage {
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: 120px;
+  left: -2.0px;
+  right: -2.0px;
+  display: inline-flex;
+  padding: 5px;
+  
+}
+
