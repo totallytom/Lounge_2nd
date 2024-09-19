@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "Message.C": "cpp"
-    }
+    },
+    "livePreview.defaultPreviewPath": "/Profile/UI.html",
+    "liveServer.settings.port": 5501
 }

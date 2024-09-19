@@ -235,3 +235,15 @@ a button:hover {
 .dropdown-content > a:hover{
   background-color: #ffffff;
 }
+
+#header-profile-title{
+  font-size: 0.75rem;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "KOTRA_BOLD-Bold";
+}
+
+#day-number{
+  color: red;
+}

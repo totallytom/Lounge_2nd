@@ -1,20 +1,14 @@
-// Get the elements on line 65
-const dateElement = document.querySelector('#header-profile-title');
-const numberElement = document.querySelector('#current-date + span');
-
-// Update the date and number automatically
-function updateDate() {
-  const currentDate = new Date();
-  const day = currentDate.getDate();
-  const month = currentDate.toLocaleString('default', { month: 'long' });
-  const year = currentDate.getFullYear();
-
-  dateElement.innerHTML = `${month} ${day} | POINTS Amount`;
-  numberElement.textContent = day;
-}
-
-// Call the updateDate function every day
-setInterval(updateDate, 86400000); // 86400000 milliseconds = 1 day
-
-// Call the updateDate function initially
-updateDate();
+const monthNameE1 = document.getElementById("month-name");
+const dayNameE1 = document.getElementById("day-name");
+const dayNumE1 = document.getElementById("day-number");
+const yearE1 = document.getElementById("year");
+const date = new Date();
+const month = date.getMonth();
+monthNameE1.innerText = date.toLocaleString("en", {
+    month: "long"
+}); 
+dayNameE1.innerText = date.toLocaleString("en",{
+    weekday: "long"
+});
+dayNumE1.innerText = date.getDate()
+yearE1.innerText = date.getFullYear()
