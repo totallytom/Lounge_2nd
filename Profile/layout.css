@@ -237,15 +237,17 @@ a button:hover {
 }
 
 #header-profile-title{
-  font-size: 0.75rem;;
+  font-size: 1.2rem;;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "KOTRA_BOLD-Bold";
-  top: 10px; 
+  font-family: "NeoDunggeunmo";
+  top: 7px; 
   position: relative;
 }
 
-#day-number{
+.day-number{
+  overflow: hidden;
+  text-align: center;
   color: red;
 }
