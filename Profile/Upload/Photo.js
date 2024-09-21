@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+const input = document.getElementById('image-input');
+const img = document.getElementById('image-display');
 
-function App() {
-    const [file, setFile] = useState();
-    function handleChange(e) {
-        console.log(e.target.files);
-        setFile(URL.createObjectURL(e.target.files[0]));
-    }
-
-    return (
-        <div className="App">
-            <h2>Add Image:</h2>
-            <input type="file" onChange={handleChange} />
-            <img src={file} />
-        </div>
-    );
-}
-
-export default App;
+input.addEventListener('change', (e) => {
+    const file = input.files[0];
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+});
