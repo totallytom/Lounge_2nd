@@ -59,3 +59,16 @@ flex-direction: column;
   
 }
 
+.sidemenu{
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(170, 157, 157);
+  border-style: solid;
+  position: fixed;
+  top: 85px;
+  left: 800px;
+  right: 50px;
+  display: inline-flex;
+  padding: 25px;
+  color: black;
+}
