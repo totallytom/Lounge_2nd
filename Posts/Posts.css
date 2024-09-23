@@ -60,15 +60,16 @@ flex-direction: column;
 }
 
 .sidemenu{
-  background-color: white;
+  background-color: transparent;
+  width: 350px;
   border-radius: 10px;
   border-color: rgb(170, 157, 157);
   border-style: solid;
-  position: absolute;
+  position: fixed;
   top: 85px;
-  left: 300px;
-  right: 10px;
-  display: inline-flex;
-  padding: 25px;
+  right: 30px;
+  display: flex;
+  padding: 35px;
+  height: 700px;
   color: black;
 }
