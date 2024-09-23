@@ -60,9 +60,10 @@ flex-direction: column;
 }
 
 .sidemenu{
-  background-color: transparent;
+  background-color: rgb(233, 230, 230);
   width: 350px;
   border-radius: 10px;
+  border-style: solid;
   border-color: rgb(170, 157, 157);
   border-style: solid;
   position: fixed;
