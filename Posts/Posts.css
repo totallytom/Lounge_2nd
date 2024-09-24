@@ -35,7 +35,7 @@ flex-direction: column;
 
 .btn-primary{
   align-items: right;
-  width: 10%;
+  width: 11%;
   height: 45px;
   background: #4f7de2;
   border: black;
@@ -43,6 +43,7 @@ flex-direction: column;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   cursor: pointer;
+  margin: 3px;
   font-size: 16px;
   color: #333;
 }
@@ -60,12 +61,9 @@ flex-direction: column;
 }
 
 .sidemenu{
-  background-color: rgb(233, 230, 230);
+  background-color: rgba(233, 230, 230, 0.438);
   width: 350px;
   border-radius: 10px;
-  border-style: solid;
-  border-color: rgb(170, 157, 157);
-  border-style: solid;
   position: fixed;
   top: 85px;
   right: 30px;
@@ -73,4 +71,11 @@ flex-direction: column;
   padding: 35px;
   height: 700px;
   color: black;
+}
+
+.bracket{
+  border: dotted;
+  border-width: 3px;
+  padding: 110px;
+  border-radius: 10px; 
 }
