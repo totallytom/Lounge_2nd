@@ -2,6 +2,6 @@
     "files.associations": {
         "Message.C": "cpp"
     },
-    "livePreview.defaultPreviewPath": "/Profile/UI.html",
+    "livePreview.defaultPreviewPath": "/Settings/Settings.html",
     "liveServer.settings.port": 5501
 }

@@ -16,3 +16,17 @@ dayNumE1.innerText = date.toLocaleString("en",{
 });
 dayNumE1.innerText = date.getDate()
 yearE1.innerText = date.getFullYear()
+
+function updateColor(elementId = "month-name", newColor) {
+    document.getElementById(elementId).style.color = newColor;
+  }
+  
+  // Example usage:
+  updateColor("month-name", "white");
+
+  function updateColor(elementId = "year", newColor) {
+    document.getElementById(elementId).style.color = newColor;
+  }
+  
+  // Example usage:
+  updateColor("year", "white");

@@ -21,8 +21,8 @@
   
   .box-title {
     font-family: "KOTRA_BOLD-Bold";
-    border-bottom: 1px solid rgb(255, 255, 255);
-    color: #000000;
+    border-bottom: 1px solid rgb(223, 210, 210);
+    color: #fffcfc;
   }
   
   .news-row {
@@ -39,16 +39,16 @@
   }
   
   .category-pic {
-    background-color: #f15f5f;
+    background-color: #b48080;
   }
   
   .category-post {
-    background-color: #355fc9;
+    background-color: #56617c;
   }
   
   .menu-row {
     display: flex;
-    border-bottom: 1px dashed grey;
+    border-bottom: 1px dashed rgb(247, 247, 247);
     margin: 3px 0;
   }
   
@@ -78,7 +78,7 @@
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid #7a6b6b;
   }
   
   div.gallery img {
