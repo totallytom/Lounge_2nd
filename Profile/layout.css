@@ -4,13 +4,13 @@ body {
 
 .bookcover {
   width: 960px;
-  height: 760px;
+  height: 600px;
   margin: 40px auto;
   position: relative;
+  bottom: 30px;
 }
 
 .bookdot {
-
   border: 2px groove rgb(131, 102, 102);
   border-radius: 9px;
   left: 14px;

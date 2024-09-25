@@ -1,4 +1,4 @@
-const profilePic = document.querySelector(".image img");
+const profilePic = document.querySelector("profile-image");
 const userFile = document.querySelector(".user-file");
 
 userFile.onchange = function () {
