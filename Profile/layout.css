@@ -4,10 +4,10 @@ body {
 
 .bookcover {
   width: 960px;
-  height: 600px;
+  height: 700px;
   margin: 40px auto;
   position: relative;
-  bottom: 30px;
+  bottom: 0px;
 }
 
 .bookdot {

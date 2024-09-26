@@ -1,6 +1,6 @@
-const profilePic = document.querySelector("profile-image");
+const profilePic = document.getElementByClassName("profile-image");
 const userFile = document.querySelector(".user-file");
 
 userFile.onchange = function () {
-    profilePoic.src = URL.createObjectURL(userFile.files[0]);
+    profilePic.src = URL.createObjectURL(userFile.files[0]);
 }

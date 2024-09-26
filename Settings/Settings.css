@@ -51,21 +51,22 @@ body, html{
 .container{
     box-sizing: border-box;
     background-color: rgb(241, 234, 234);
-    padding: 10px 50px;
-    border-radius: 20px;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgb(200,200,200);
     width: 450px;
-    display: flex;
+    display: absolute;
     flex-direction: column;
-    gap: 10px; 
+    gap: 5px; 
 }
 
 h1, h3{
-    font-weight: 600;
+    font-weight: 300;
 }
 
 span{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .toggle-container{
