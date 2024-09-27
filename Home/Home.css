@@ -24,12 +24,13 @@ border-color: rgb(170, 157, 157);
 border-style: solid;
 border-width: 2px;
 position: fixed;
-top: 85px;
+top: 75px;
 left: 20px;
-right: 400px;
+right: 500px;
 display: flex;
-padding: 25px;
+padding: 3px;
 color: rgb(255, 255, 255);
+height: 235px;
 
 }
 
@@ -52,7 +53,7 @@ color: #333;
 background-color: #fff9f9e1;
 border-radius: 20px;
 position: absolute;
-top: 120px;
+top: 240px;
 left: -2.0px;
 right: -2.0px;
 display: inline-flex;
@@ -62,20 +63,49 @@ padding: 5px;
 
 .sidemenu{
 background-color: rgba(233, 230, 230, 0.438);
-width: 350px;
+width: 220px;
 border-radius: 10px;
 position: fixed;
 top: 85px;
 right: 30px;
 display: flex;
-padding: 35px;
 height: 700px;
 color: black;
 }
 
-.bracket{
-border: dotted;
-border-width: 3px;
-padding: 110px;
-border-radius: 10px; 
+.trending{
+  background-color: rgba(233, 230, 230, 0.438);
+  width: 220px;
+  border-radius: 10px;
+  position: fixed;
+  top: 85px;
+  right: 260px;
+  display: flex;
+  height: 700px;
+  color: black;
+  }
+  
+
+.slider_container {
+  position: relative;
+  transform: translateY(-90px); /* Adjust the distance to move as needed */
+  left: 200px;
+}
+
+.track-name{
+  position: relative;
+  transform: translateY(-100px);
+  left: 00px; 
+}
+
+.track-artist{
+  position: relative;
+  transform: translateY(-90px);
+  left: 00px;
+}
+
+.track-art{
+  position: relative;
+  transform: translateY(40px);
+  left: 30px;
 }

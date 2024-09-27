@@ -6,6 +6,8 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet"
+		href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="Home.css">
 </head>
 <body>   
@@ -51,20 +53,51 @@
   <!--This section will show music playbutton, rewind, and music that's playing-->
   <div class="container">
     <div class="menupage">
-  <!--This section will show music playing, playbutton, and rewind-->
-      <h1>Music Section</h1>
-      <div class="mainpage">
-      <!--This section will show trending section-->
-        <button type="button" class="btn-primary">relevant</button>  
-        <button type="button" class="btn-primary">relevant</button> 
-        <button type="button" class="btn-primary">relevant</button> 
-        <button type="button" class="btn-primary">relevant</button> 
-        <button type="button" class="btn-primary">relevant</button> 
+      <h1>Music</h1>
+      <link rel="stylesheet" href=/Home/music/music.css>
+      <!--This section will show music playing, playbutton, and rewind-->
+      <div class = "musicplayer">
+      <div class="details">
+        <div class="track-art"></div>
+        <div class="track-name">Track Name</div>
+        <div class="track-artist">Track Artist</div>
+        </div>
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        </div>
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+            value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+        </div>
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100"
+            value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+        </div>
       </div>
+      <script src="/Home/music/music.js"></script>
+    <div class="mainpage">
       <!--This section will show playlist-->
       <div class = "sidemenu">
-        <div class = "bracket">
-        </div>
+        <h1>Trending</h1>
+      </div>
+      <!--This section will show trending-->
+      <div class = "trending">
+        <h1>Playlist</h1>
       </div>
     </div>
   </div>
