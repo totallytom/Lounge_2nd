@@ -124,3 +124,13 @@
     i.fa-step-backward {
     cursor: pointer;
     }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slider_container { 
+        display: flex;
+        flex-direction: row;
+    }
