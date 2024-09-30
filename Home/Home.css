@@ -93,13 +93,13 @@ color: black;
 
 .track-art{
   height: 220px;
-  width: 500px;
+  width: 300px;
   background-color: white;
   border-radius: 10px;
   transform: translateX(200px);
   position: relative;
   top: 2px;
-  left: 300px;
+  left: 120px;
 }
 
 .track-name{
@@ -116,7 +116,7 @@ padding: 3px 5px;
 border: none;
 border-radius: 7px;
 position: relative;
-bottom: 210px;
+bottom: 190px;
 left: 50px;
 }
 
@@ -127,28 +127,28 @@ padding: 3px 5px;
 border: none;
 border-radius: 7px;
 position: relative;
-bottom: 210px;
+bottom: 190px;
 left: 50px;
 }
 
 #forwardbutton{
   background-color: #ac9797;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 3px 5px;
   border: none;
   border-radius: 7px;
   position: relative;
-  bottom: 150px;
+  bottom: 190px;
   left: -100px;
 }
 
 #rewindbutton{
   background-color: #ac9797;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 3px 5px;
   border: none;
   border-radius: 7px;
   position: relative;
-  bottom: 150px;
-  left: -10px;
+  bottom: 190px;
+  left: 6px;
 }
