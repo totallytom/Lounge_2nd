@@ -88,24 +88,67 @@ color: black;
 
 .slider_container {
   position: relative;
-  transform: translateY(-90px); /* Adjust the distance to move as needed */
   left: 200px;
 }
 
-.track-name{
-  position: relative;
-  transform: translateY(-100px);
-  left: 00px; 
-}
-
-.track-artist{
-  position: relative;
-  transform: translateY(-90px);
-  left: 00px;
-}
-
 .track-art{
+  height: 220px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  transform: translateX(200px);
   position: relative;
-  transform: translateY(40px);
-  left: 30px;
+  top: 2px;
+  left: 300px;
+}
+
+.track-name{
+font-size: 50px;
+position: relative;
+bottom: 200px;
+left: 30px;
+}
+
+#restartButton {
+background-color: #ac9797;
+color: #ffffff;
+padding: 3px 5px;
+border: none;
+border-radius: 7px;
+position: relative;
+bottom: 210px;
+left: 50px;
+}
+
+#nextButton {
+background-color: #ac9797;
+color: #ffffff;
+padding: 3px 5px;
+border: none;
+border-radius: 7px;
+position: relative;
+bottom: 210px;
+left: 50px;
+}
+
+#forwardbutton{
+  background-color: #ac9797;
+  color: #ffffff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  bottom: 150px;
+  left: -100px;
+}
+
+#rewindbutton{
+  background-color: #ac9797;
+  color: #ffffff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  bottom: 150px;
+  left: -10px;
 }
