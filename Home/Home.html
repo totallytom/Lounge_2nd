@@ -67,8 +67,10 @@
               </div>
           </div>
       </div>
-      <button id="restartButton">Restart</button>
-  
+      <button id="restartButton" class="action-btn">
+        <i class = "fas fa-backward"></i>
+      </button>
+
       <script>
       const restartButton = document.getElementById('restartButton');
       
@@ -80,7 +82,9 @@
       }
       </script>
       
-      <button id="nextButton">Next</button>
+      <button id="nextButton" class="action-btn">
+        <i class = "fas fa-forward"></i>
+      </button>
 
       <script>
       const nextButton = document.getElementById('nextButton');
@@ -89,6 +93,20 @@
   
       function nextAudio() {
         audioElement.currentTime = 0;
+        audioElement.play();
+      }
+      </script>
+      </script>
+
+      <button id="rewindbutton">10-</button> 
+
+      <script>
+      const rewindbutton = document.getElementById('rewindbutton');
+      
+      rewindbutton.addEventListener('click', rewindAudio);
+  
+      function rewindAudio() {
+        audioElement.currentTime -= 10;
         audioElement.play();
       }
       </script>
@@ -106,18 +124,6 @@
       }
       </script>
 
-      <button id="rewindbutton">10-</button> 
-
-      <script>
-      const rewindbutton = document.getElementById('rewindbutton');
-      
-      rewindbutton.addEventListener('click', rewindAudio);
-  
-      function rewindAudio() {
-        audioElement.currentTime -= 10;
-        audioElement.play();
-      }
-      </script>
     <div class="mainpage">
       <!--This section will show playlist-->
       <div class = "sidemenu">

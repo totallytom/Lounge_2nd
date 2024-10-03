@@ -117,7 +117,7 @@ border: none;
 border-radius: 7px;
 position: relative;
 bottom: 190px;
-left: 50px;
+left: 83px;
 }
 
 #nextButton {
@@ -128,18 +128,7 @@ border: none;
 border-radius: 7px;
 position: relative;
 bottom: 190px;
-left: 50px;
-}
-
-#forwardbutton{
-  background-color: #ac9797;
-  color: #ffffff;
-  padding: 3px 5px;
-  border: none;
-  border-radius: 7px;
-  position: relative;
-  bottom: 190px;
-  left: -100px;
+left: 80px;
 }
 
 #rewindbutton{
@@ -150,5 +139,16 @@ left: 50px;
   border-radius: 7px;
   position: relative;
   bottom: 190px;
-  left: 6px;
+  left: -20px;
+}
+
+#forwardbutton{
+  background-color: #ac9797;
+  color: #ffffff;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  bottom: 190px;
+  left: 45px;
 }

@@ -14,4 +14,3 @@ function togglePlayPause() {
     trackArt.innerHTML = '<i class="fas fa-play"></i>';
   }
 }
-
