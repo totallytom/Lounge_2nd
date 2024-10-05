@@ -1,5 +1,6 @@
 const trackArt = document.querySelector('.track-art');
 const audioElement = document.querySelector('audio');
+let volume_slider = document.querySelector(".volume_slider");
 
 trackArt.addEventListener('click', togglePlayPause);
 
