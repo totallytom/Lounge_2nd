@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './message.html';
 function ChatMessage({ message }) {
   return (
     <div className={`message ${message.sender}`}>
