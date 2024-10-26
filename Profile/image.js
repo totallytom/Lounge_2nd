@@ -1,6 +1,7 @@
-const profilePic = document.getElementByClassName("profile-image");
-const userFile = document.querySelector(".user-file");
+const menu = document.querySelector(".menu-container");
+const picture = document.querySelector(".picture");
 
-userFile.onchange = function () {
-    profilePic.src = URL.createObjectURL(userFile.files[0]);
-}
+menu.addEventListener("click", () => {
+    console.log("Element was clicked");
+
+});

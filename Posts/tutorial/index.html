@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b2ceb421b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="/Pictures/images/logo.png" class="logo">
+            <ul>
+                <li><img src="/Pictures/images/notification.png"></li>
+                <li><img src="/Pictures/images/inbox.png"></li>
+                <li><img src="/Pictures/images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+        
+            <div class="search-box">
+                <img src="/Pictures/images/search.jpg">
+                <input type-"text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick = "settingsMenuToggle()">
+                <img src="/Pictures/DINO.png">
+            </div>
+
+        </div>
+<!---------Settings menu---------------------------->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/Pictures/DINO.png">
+                    <div>
+                        <p>Thomas Kim</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/Pictures/images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="/Pictures/images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="/Pictures/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Pictures/images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="/Pictures/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Pictures/images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="/Pictures/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="/Pictures/images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="/Pictures/images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    
+    <div class="container">
+<!---------Left sidebar---------------------------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="/Pictures/images/news.png">Latest News</a>
+                <a href="#"><img src="/Pictures/images/friends.png">Friends</a>
+                <a href="#"><img src="/Pictures/images/group.png">Group</a>
+                <a href="#"><img src="/Pictures/images/marketplace.png">Shop</a>
+                <a href="#"><img src="/Pictures/images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#">Your Profile</a>
+                <a href="#">Your Music</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+<!---------main content--------------------->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="/Pictures/images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="/Pictures/images/member-1.png">
+                    <p>Someone</p>
+                </div>
+                <div class="story story3">
+                    <img src="/Pictures/images/member-2.png">
+                    <p>Someone2</p>
+                </div>
+                <div class="story story4">
+                    <img src="/Pictures/images/member-3.png">
+                    <p>Someone3</p>
+                </div>
+                <div class="story story5">
+                    <img src="/Pictures/images/member-4.png">
+                    <p>Someone4</p>
+                </div>
+            </div>
+        
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="/Pictures/DINO.png">
+                    <div>
+                        <p>Thomas Kim</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Thomas?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="/Pictures/images/live-video.png">Live Video</a>
+                        <a href="#"><img src="/Pictures/images/photo.png">Photo Video</a>
+                        <a href="#"><img src="/Pictures/images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/Pictures/DINO.png">
+                        <div>
+                            <p>Thomas Kim</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p>I was here <a href="#">#Dino</a></p>
+                <img src="/Pictures/luffy.jpg" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/Pictures/images/like-blue.png">0</div>
+                        <div><img src="/Pictures/images/comments.png">0</div>
+                        <div><img src="/Pictures/images/share.png">0</div>
+                    </div>
+                    <div class="post-profile-icon">
+
+                    </div>
+                </div>
+            </div>
+            
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+<!--------right sidebar---------------------->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>Day</h3>
+                    <span>Month</span>
+                </div>
+                <div class="right-event">
+                    <h4>Band Name</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Location</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>Day</h3>
+                    <span>Month</span>
+                </div>
+                <div class="right-event">
+                    <h4>Band Name</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Location</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="/Pictures/images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/Pictures/images/member-1.png">
+                </div>
+                <p>Thomas Stark</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/Pictures/images/member-2.png">
+                </div>
+                <p>Jon Snow</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/Pictures/images/member-3.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+        </div>
+    </div>
+<div class="footer">
+    <p>Copyright 2024 - Lounge</p>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
