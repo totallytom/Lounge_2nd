@@ -27,7 +27,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff4d;
+    background: #40e7e7;
     padding: 5px 5%;
     position: sticky; 
     top: 0;
@@ -115,6 +115,11 @@ nav{
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e4dee7f3;
+    text-align: center;
+    height: 300px;
 }
 
 .right-sidebar{
@@ -139,6 +144,7 @@ nav{
     margin-bottom: 30px;
     color: #626262;
     width: fit-content;
+    font-family: "KyoboHand";
 }
 
 .imp-links a img{
@@ -148,6 +154,7 @@ nav{
 
 .imp-links a:last-child{
     color: #1876f2;
+    font-family: "KyoboHand";
 }
 
 .imp-links{
@@ -296,19 +303,19 @@ nav{
 }
 
 .story2{
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-2.png);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/mickey.jpg);
 }
 
 .story3{
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-3.png);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/naruto.jpg);
 }
 
 .story4{
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-4.png);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-4.pg);
 }
 
 .story5{
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-5.png);
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(/Pictures/images/status-5.ng);
 }
 
 .story.story1 img{
