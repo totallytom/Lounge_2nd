@@ -7,7 +7,7 @@
 
 :root{
     --body-color: #efefef;
-    --nav-color: #1876f2;
+    --nav-color: #a218f2;
     --bg-color: #fff;
 }
 .dark-theme{
@@ -19,21 +19,27 @@
 body{
     background: var(--body-color);
     transition: background 0.3s;
+    background-image: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--nav-color);
+    background: #ffffff4d;
     padding: 5px 5%;
     position: sticky; 
     top: 0;
     z-index: 100;
 }
 
-.logo{
-    width: 160px;
-    margin-right: 45px;
+.title{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-family:"avenir';
 }
 
 .nav-left, .nav-right{
@@ -126,7 +132,7 @@ nav{
     flex-basis: 47%;
 }
 
-.imp-links a, .shortcut-links a{
+.imp-links a, .music-player a{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -148,16 +154,23 @@ nav{
     border-bottom: 1px solid #ccc;
 }
 
-.shortcut-links a img{
+.music-player a img{
     width: 40px;
     border-radius: 4px;
     margin-right: 15px;
 }
 
-.shortcut-links p{
+.music-player p{
+    font-family: "KyoboHand";
     margin: 25px 0;
     color: black;
-    font-weight: 500;
+    font-size: 20px;
+    color: rgb(248, 248, 248); 
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e4dee73a;
+    text-align: center;
+    height: 400px;
 }
 
 .sidebar-title{
