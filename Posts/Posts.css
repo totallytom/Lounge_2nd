@@ -23,70 +23,6 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #40e7e7;
-  padding: 5px 5%;
-  position: sticky; 
-  top: 0;
-  z-index: 100;
-}
-
-.title{
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-size: 25px;
-  font-family:"avenir';
-}
-
-.nav-left, .nav-right{
-  display: flex;
-  align-items: center;
-}
-
-.nav-left ul li{
-  list-style: none;
-  display: inline-block;
-}
-
-.nav-left ul li img{
-  width: 28px;
-  margin: 0 15px;
-}
-
-.nav-user-icon img{
-  width: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.nav-user-icon{
-  margin-left: 30px;
-}
-
-.search-box{
-  background: #efefef;
-  width: 350px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
-
-.search-box img{
-  width: 18px;
-}
-
-.search-box input{
-  width: 100%;
-  background: transparent;
-  padding: 10px;
-  outline: none;
-  border: 0;
-}
 
 .online{
   position: relative;
@@ -110,16 +46,20 @@ nav{
   padding: 13px 5%;
 }
 
+.page{
+  border-radius: 9px;
+  border: dotted 2px #ac9c9c;
+  padding: 30px;
+}
+
 .left-sidebar{
   flex-basis: 25%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  padding: 10px;
+  background: rgba(71, 69, 69, 0.664);
+  padding: 30px;
   border-radius: 4px;
-  background-color: #e4dee7f3;
-  text-align: center;
-  height: 300px;
 }
 
 .right-sidebar{
@@ -142,7 +82,7 @@ nav{
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  color: #626262;
+  color: #f1dede;
   width: fit-content;
   font-family: "KyoboHand";
 }
@@ -157,27 +97,17 @@ nav{
   font-family: "KyoboHand";
 }
 
-.imp-links{
-  border-bottom: 1px solid #ccc;
-}
-
-.music-player a img{
-  width: 40px;
-  border-radius: 4px;
-  margin-right: 15px;
-}
-
 .music-player p{
-  font-family: "KyoboHand";
+  font-family: "KyoboHand-Bold";
   margin: 25px 0;
-  color: black;
   font-size: 20px;
-  color: rgb(248, 248, 248); 
-  padding: 10px;
+  color: rgb(255, 254, 254); 
+  padding: 20px;
   border-radius: 4px;
-  background-color: #e4dee73a;
+  background-color: #78737a73;
   text-align: center;
   height: 400px;
+  align-self: flex-start;
 }
 
 .sidebar-title{

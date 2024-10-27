@@ -1,14 +1,9 @@
 body {
-  background-color: #a3a3a3;
-
-  background-image: url("/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif");
-
-
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+background: var(--body-color);
+  transition: background 0.3s;
+  background-image: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container{
@@ -23,14 +18,13 @@ border-radius: 10px;
 border-color: rgb(170, 157, 157);
 border-style: solid;
 border-width: 2px;
-position: fixed;
-top: 75px;
-left: 20px;
-right: 500px;
-display: flex;
-padding: 3px;
+position: sticky;
+top: 70px;
+left: 30px;
+right: 10px;
+padding: 10px;
 color: rgb(255, 255, 255);
-height: 235px;
+height: 300px;
 
 }
 

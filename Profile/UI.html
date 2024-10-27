@@ -35,7 +35,7 @@
               <a class="nav-link" href="/Profile/UI.html">Profile</a>
             </li>
             <li class="nav-item"></li>
-              <a class="nav-link active" aria-current="page" href="/Posts/Posts.html">Activity</a>
+              <a class="nav-link" href="/Posts/Posts.html">Activity</a>
             </li>
             <li class="nav-item dropdown">
               <!--dropdown menu add letter "t" in "nav-link dropdown-toggle"-->
@@ -59,6 +59,7 @@
         </div>
       </div>
     </nav>
+
     <div class="bookcover">
       <div class="bookdot">
         <div class="page">
@@ -75,10 +76,8 @@
               </label>
                 <div class="profile-image">
                   <img
-                    class="profile-image-img"
-                    src="/Pictures/DINO.png"
-                    alt="Profile Image"
-                />
+                    id="profile-image-img"
+                    src="/Pictures/DINO.png"/>
                 </div>
               <div class="profile-text font-kyobohand">
                 Hello, welcome to my page! This page will show your bio
@@ -123,12 +122,18 @@
               <div class="miniroom">
                 <div class="box-title">Archived Memories</div>
                 <div class="miniroom-gif-box">
-                    <p class = "image-input" id="image-input"></p>
-                    <p class = "image-display" id="image-display"></p>
-                    <img src = "" id="image-display" class="miniroom-gif">
-                    <input type="file" id="image-input">
-                    <p class="p"></p>
-                    <script src="/Profile/Upload/Photo.js"></script>
+                    <label for="upload" id="imageupdae">update image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/gif, img/jpg" id="upload">
+                    <script>
+                      
+                      let upload = document.getElementById("imageupdate");
+                      let inputFile = document.getElementById("upload");
+
+                      inputFile.onchange = function() {
+                        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+                      }
+
+                    </script>
                 </div>
               </div>
             </div>
