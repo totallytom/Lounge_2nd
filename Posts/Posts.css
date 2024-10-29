@@ -47,9 +47,9 @@ body{
 }
 
 .page{
-  border-radius: 9px;
-  border: dotted 2px #ac9c9c;
+  border: solid 2px #d8cdcd;
   padding: 30px;
+  background-color: #d8cdcd; 
 }
 
 .left-sidebar{
@@ -57,9 +57,8 @@ body{
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  background: rgba(71, 69, 69, 0.664);
+  background: rgb(138, 135, 135);
   padding: 30px;
-  border-radius: 4px;
 }
 
 .right-sidebar{
@@ -82,9 +81,9 @@ body{
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  color: #f1dede;
+  color: #1e1b1b;
   width: fit-content;
-  font-family: "KyoboHand";
+  font-family: "times new roman";
 }
 
 .imp-links a img{
