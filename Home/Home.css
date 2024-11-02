@@ -1,148 +1,177 @@
-body {
-background: var(--body-color);
-  transition: background 0.3s;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: var(--body-color);
   background-image: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
   background-size: cover;
   background-attachment: fixed;
 }
-
-.container{
-flex: 1;
-display: inline-flex;
-flex-direction: column;
-}
-
-.menupage {
-background-color: rgba(77, 69, 69, 0.541);
-border-radius: 10px;
-border-color: rgb(170, 157, 157);
-border-style: solid;
-border-width: 2px;
-position: sticky;
-top: 70px;
-left: 30px;
-right: 10px;
-padding: 10px;
-color: rgb(255, 255, 255);
-height: 300px;
-
-}
-
-.btn-primary{
-align-items: right;
-width: 11%;
-height: 45px;
-background: #4f7ee2;
-border: black;
-outline: black;
-border-radius: 40px;
-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-cursor: pointer;
-margin: 3px;
-font-size: 16px;
-color: #333;
-}
-
-.mainpage {
-background-color: #fff9f9e1;
-border-radius: 20px;
-position: absolute;
-top: 240px;
-left: -2.0px;
-right: -2.0px;
-display: inline-flex;
-padding: 5px;
-
-}
-
-.sidemenu{
-background-color: rgba(233, 230, 230, 0.438);
-width: 220px;
-border-radius: 10px;
-position: fixed;
-top: 85px;
-right: 30px;
-display: flex;
-height: 700px;
-color: black;
-}
-
-.trending{
-  background-color: rgba(233, 230, 230, 0.438);
-  width: 220px;
-  border-radius: 10px;
+.sidebar {
   position: fixed;
-  top: 85px;
-  right: 260px;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 196px;
+  background-color: #7a747442;
+  padding: 24px;
+}
+.sidebar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.sidebar .navigation ul li {
+  padding: 10px 0px;
+}
+.sidebar .navigation ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+  color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa {
+  color: #b3b3b3;
+}
+.sidebar .navigation ul li .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:hover .fa:active,
+.sidebar .navigation ul li a:hover .fa:focus {
+  color: #ffffff;
+}
+.sidebar .policies {
+  position: absolute;
+  bottom: 100px;
+}
+.sidebar .policies ul {
+  list-style: none;
+}
+.sidebar .policies ul li {
+  padding-bottom: 5px;
+}
+.sidebar .policies ul li a {
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10px;
+}
+.sidebar .policies ul li a:hover,
+.sidebar .policies ul li a:active,
+.sidebar .policies ul li a:focus {
+  text-decoration: underline;
+}
+
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+}
+
+.spotify-playlists {
+  padding: 20px 40px;
+}
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.spotify-playlists .list {
   display: flex;
-  height: 700px;
-  color: black;
-  }
-  
-
-.slider_container {
+  gap: 20px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.spotify-playlists .list .item .play {
   position: relative;
-  left: 200px;
 }
-
-.track-art{
-  height: 220px;
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
-  transform: translateX(200px);
-  position: relative;
-  top: 2px;
-  left: 120px;
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
 }
-
-.track-name{
-font-size: 50px;
-position: relative;
-bottom: 200px;
-left: 30px;
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
 }
-
-#restartButton {
-background-color: #ac9797;
-color: #ffffff;
-padding: 3px 5px;
-border: none;
-border-radius: 7px;
-position: relative;
-bottom: 190px;
-left: 83px;
-}
-
-#nextButton {
-background-color: #ac9797;
-color: #ffffff;
-padding: 3px 5px;
-border: none;
-border-radius: 7px;
-position: relative;
-bottom: 190px;
-left: 80px;
-}
-
-#rewindbutton{
-  background-color: #ac9797;
+.spotify-playlists .list .item h4 {
   color: #ffffff;
-  padding: 3px 5px;
-  border: none;
-  border-radius: 7px;
-  position: relative;
-  bottom: 190px;
-  left: -20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
 }
 
-#forwardbutton{
-  background-color: #ac9797;
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.preview h6 {
   color: #ffffff;
-  padding: 3px 5px;
-  border: none;
-  border-radius: 7px;
-  position: relative;
-  bottom: 190px;
-  left: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
 }

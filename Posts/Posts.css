@@ -1,14 +1,13 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
 }
 
 :root{
-  --body-color: #efefef;
+  --body-color: #ff69b4;
   --nav-color: #a218f2;
-  --bg-color: #fff;
+  --bg-color: #ffffff;
 }
 .dark-theme{
   --body-color: #0a0a0a;
@@ -46,18 +45,12 @@ body{
   padding: 13px 5%;
 }
 
-.page{
-  border: solid 2px #d8cdcd;
-  padding: 30px;
-  background-color: #d8cdcd; 
-}
-
 .left-sidebar{
   flex-basis: 25%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  background: rgb(138, 135, 135);
+  background: var(--bg-color);
   padding: 30px;
 }
 
@@ -68,8 +61,7 @@ body{
   align-self: flex-start;
   background: var(--bg-color);
   padding: 20px;
-  border-radius: 4px;
-  color: #626262;
+  color: #000000;
 }
 
 .main-content{  
@@ -81,9 +73,8 @@ body{
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  color: #1e1b1b;
   width: fit-content;
-  font-family: "times new roman";
+  font-size: 1.2rem; 
 }
 
 .imp-links a img{
@@ -93,16 +84,13 @@ body{
 
 .imp-links a:last-child{
   color: #1876f2;
-  font-family: "KyoboHand";
 }
 
 .music-player p{
-  font-family: "KyoboHand-Bold";
   margin: 25px 0;
   font-size: 20px;
-  color: rgb(255, 254, 254); 
+  color: rgb(0, 0, 0); 
   padding: 20px;
-  border-radius: 4px;
   background-color: #78737a73;
   text-align: center;
   height: 400px;
@@ -134,7 +122,6 @@ body{
 }
 
 .left-event{
-  border-radius: 10px;
   height: 65px;
   width: 65px;
   margin-right: 15px;
@@ -152,7 +139,7 @@ body{
 .event a{
   font-size: 12px;
   text-decoration: none;
-  color: #1876f2;
+  color: #6200ff;
 }
 
 .left-event span{
@@ -160,8 +147,8 @@ body{
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1876f2;
-  color: #fff;
+  background: #030303;
+  color: #ffffff;
   font-size: 10px;
   padding: 4px 0;
 }
@@ -180,7 +167,6 @@ body{
 
 .online-list .online img{
   width: 40px;
-  border-radius: 50%;
 }
 
 .online-list .online{
@@ -206,16 +192,16 @@ body{
   position: relative;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 3ex;
 }
 
 .story img{
   position: absolute;
   width: 45px;
-  border-radius: 50%;
   top: 10px;
   left: 10px;
-  border: 5px solid #1876f2;
+  border-radius: 50%;
+  border: 5px solid #7f0bcc;
 }
 
 .story p{
@@ -223,7 +209,7 @@ body{
   bottom: 10px;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #fffafa;
   font-size: 14px;
 }
 
@@ -259,9 +245,7 @@ body{
 .write-post-container{
   width: 100%;
   background: var(--bg-color);
-  border-radius: 6px;
   padding: 20px;
-  color: #626262;
 }
 
 .user-profile{
@@ -271,7 +255,6 @@ body{
 
 .user-profile img{
   width: 45px;
-  border-radius: 50%;
   margin-right: 10px;
 }
 
@@ -321,7 +304,6 @@ body{
 .post-container{
   width: 100%;
   background: var(--bg-color);
-  border-radius: 6px;
   padding: 20px;
   color: #626262;
   margin: 20px 0;
