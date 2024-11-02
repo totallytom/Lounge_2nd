@@ -94,13 +94,13 @@ body{
   min-width: 140px;
   width: 160px;
   padding: 15px;
-  background-color: #181818;
+  background-color: #c7a9a963;
   border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
 }
 .spotify-playlists .list .item:hover {
-  background-color: #252525;
+  background-color: #49ac35b0;
 }
 .spotify-playlists .list .item img {
   width: 100%;
@@ -115,7 +115,7 @@ body{
   right: 10px;
   top: -60px;
   padding: 18px;
-  background-color: #1db954;
+  background-color: #1daeb9;
   border-radius: 100%;
   opacity: 0;
   transition: all ease 0.4s;

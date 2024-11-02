@@ -7,7 +7,7 @@
 :root{
   --body-color: #ff69b4;
   --nav-color: #a218f2;
-  --bg-color: #ffffff;
+  --bg-color: #cfc9c99a;
 }
 .dark-theme{
   --body-color: #0a0a0a;
@@ -75,15 +75,12 @@ body{
   margin-bottom: 30px;
   width: fit-content;
   font-size: 1.2rem; 
+  color: black;
 }
 
 .imp-links a img{
   width: 25px;
   margin-right: 15px;
-}
-
-.imp-links a:last-child{
-  color: #1876f2;
 }
 
 .music-player p{
