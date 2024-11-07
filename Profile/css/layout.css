@@ -1,7 +1,7 @@
 body {
   background: var(--body-color);
     transition: background 0.3s;
-    background-image: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
+    background: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
     background-size: cover;
     background-attachment: fixed;
   }
