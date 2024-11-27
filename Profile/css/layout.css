@@ -1,10 +1,15 @@
-body {
-  background: var(--body-color);
-    transition: background 0.3s;
-    background: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
-    background-size: cover;
-    background-attachment: fixed;
-  }
+body{
+  background: linear-gradient(#f0b8f7, #4d969b);
+  height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'KyoboHand';
+}
+
 .bookcover {
   width: 960px;
   height: 700px;

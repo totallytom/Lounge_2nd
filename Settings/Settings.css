@@ -36,27 +36,27 @@
   font-family: "NeoDunggeunmo";
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'KyoboHand';
+}
+
 body{
-    background-image: url("/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif");
-    color:black;
+    background-image: url("/Pictures/CloudyFloof.gif");
+    background: linear-gradient(#f0b8f7, #4d969b);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.main-container{
-  display: absolute;
-  background: white;
-  padding: 60px;
-  position: center;
-}
-
 .left-container{
-    font-family:"NeoDunggeunmo";
+    font-family:"KOTRA_BOLD-Bold";
     flex-basis: 25%;
     position: absolute;
     top: 70px;
     align-self: flex-start;
-    background: white;
+    background: #e2d2d2;
     padding: 20px;
     border-radius: 15px;
   }

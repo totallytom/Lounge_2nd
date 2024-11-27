@@ -8,6 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="/Settings/Settings.js"></script>
+    <script src="/Settings/Background.js"></script>
 </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -20,7 +22,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Home/Home.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/Home/Home/Home.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/Profile/UI.html">Profile</a>
@@ -56,6 +58,9 @@
               </div>
             </div>
           </nav>
+          <div class="main-container">
+
+          </div>
         <div class="left-container">
             <div class="font-kotra">
                 <h1>Settings</h1>
@@ -139,10 +144,9 @@
                 <span><i class='bx bx-arrow-back'><a href="/Profile/UI.html">Back</a></i></span>
             </div>
        </div> 
-       <div class="main-container">
-            <div class="change-wallpaper">
-              <span>change wallpaper</span>  
-            </div>
-       </div>
+       <form id="imageUploadForm">
+        <input type="file" id="imageInput" name="image">
+        <button type="submit">Upload and Apply</button>
+      </form>
     </body>    
 </html>

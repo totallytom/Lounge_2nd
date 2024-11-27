@@ -28,12 +28,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'KyoboHand';
 }
 
 :root{
   --body-color: #ff69b4;
   --nav-color: #a218f2;
-  --bg-color: #a2dac2c5;
+  --bg-color: #e2d2d2;
 }
 .dark-theme{
   --body-color: #0a0a0a;
@@ -43,8 +44,7 @@
 
 body{
   background: var(--body-color);
-  transition: background 0.3s;
-  background-image: url(/Pictures/lida-cosgrove-lcosgrove-campfire-final-full.gif);
+  background: linear-gradient(#f0b8f7, #4d969b);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -103,7 +103,7 @@ body{
   margin-bottom: 30px;
   width: fit-content;
   font-size: 1.2rem; 
-  color: rgb(240, 234, 234);
+  color: rgb(0, 0, 0);
 }
 
 .imp-links a img{
@@ -289,7 +289,7 @@ body{
 .user-profile p{
   margin-bottom: -5px;
   font-weight: 500;
-  color: #f8f0f0;
+  color: #000000;
 }
 
 .user-profile small{
@@ -319,7 +319,7 @@ body{
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #626262;
+  color: #141414;
   margin-right: 30px;
   font-size: 13px;
 }
@@ -333,23 +333,23 @@ body{
   width: 100%;
   background: var(--bg-color);
   padding: 20px;
-  color: #bebebe;
+  color: #0c0c0c;
   margin: 20px 0;
 }
 
 .user-profile span{
   font-size: 13px;
-  color: #9a9a9a;
+  color: #0c0c0c;
 }
 
 .post-text{
-  color: #9a9a9a;
+  color: #070707;
   margin: 15px 0;
   font-size: 15px;
 }
 
 .post-text span{
-  color: #626262;
+  color: #080808;
   font-weight: 500;
 }
 
